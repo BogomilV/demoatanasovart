@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-bg.jpg"
+          src="/newhero-bg.jpg"
           alt="Atanasov Art Tattoo Studio Background"
           className="w-full h-full object-cover object-center"
           onError={(e) => {
