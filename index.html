@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bg" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atanasov Art — Студио за Татуировки</title>
+    <link rel="icon" href="/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Cinzel', 'serif'],
+            },
+            colors: {
+              charcoal: '#121212',
+              // Using Tailwind's default red palette implicitly, 
+              // but we define charcoal for the dark background.
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for dark theme */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1f1f1f; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #dc2626; /* red-600 */
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b91c1c; /* red-700 */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-charcoal text-gray-200 antialiased selection:bg-red-600 selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
